@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'publisher_node = motor_servo_sim.publisher_node:main',
             'subscriber_node = motor_servo_sim.subscriber_node:main',
+            'teleop_node = motor_servo_sim.teleop_node:main',
         ],
     },
 )
