@@ -11,11 +11,11 @@ class MotorServoPublisher(Node):
     
     def timer_callback(self):
         motor_speed = 100.0  # 100 RPM
-        servco_angle = 45.0  # Derece
+        servo_angle = 45.0  # Derece
 
         self.motor_pub.publish(Float32(data=motor_speed))
-        self.servo_pub.publish(Float32(data_servo_angle))
-        self.get_logger().info(f'Published motor speed: {motor_speed}, Servo angle: {servco_angle}')
+        self.servo_pub.publish(Float32(data=servo_angle))
+        self.get_logger().info(f'Published motor speed: {motor_speed}, Servo angle: {servo_angle}')
 
 
 def main(args=None):
